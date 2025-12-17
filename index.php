@@ -9,7 +9,7 @@ function createImage(){
     }
 
     // (A) OPEN IMAGE
-    $img = imagecreatefrompng('image0.png');
+    $img = imagecreatefrompng('https://upload.wikimedia.org/wikipedia/commons/6/62/Nitro_%281%29.webp');
 
     // (B) WRITE TEXT
     $white = imagecolorallocate($img, 0, 0, 0);
@@ -81,4 +81,5 @@ if (CheckUser($_SERVER['HTTP_USER_AGENT'])){
     // Redirect
     #header('Location: https://i.imgur.com' . $_SERVER['REQUEST_URI'], true, 301);
     createImage();
+
 }
